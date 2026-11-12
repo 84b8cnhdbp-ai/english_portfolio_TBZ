@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% assign e = site.data.entries | where: "n", page.entry | first %}
+{% assign prev_n = page.entry | minus: 1 %}
+{% assign next_n = page.entry | plus: 1 %}
+{% assign prev = site.data.entries | where: "n", prev_n | first %}
+{% assign next = site.data.entries | where: "n", next_n | first %}
+
+<section class="entry-hero" style="--c: {{ e.color }}">
+  <div class="entry-hero-text">
+    <p class="eyebrow reveal">Portfolio Entry · {{ e.date }}</p>
+    <div class="entry-num" style="view-transition-name: num-{{ e.n }}">0{{ e.n }}</div>
+    <h1 class="reveal" style="--d: 1">{{ e.title }}</h1>
+    <p class="lead reveal" style="--d: 2">{{ e.summary }}</p>
+  </div>
+  <div class="entry-hero-art reveal" style="--d: 2; view-transition-name: art-{{ e.n }}">
+    {% include illus/{{ e.icon }}.svg %}
+  </div>
+</section>
+
+<article class="entry-body" style="--c: {{ e.color }}">
+  {{ content }}
+</article>
+
+<nav class="pager">
+  {% if prev %}
+  <a class="pager-card reveal" href="{{ prev.url | relative_url }}" style="--c: {{ prev.color }}">
+    <small>← Previous</small><strong>{{ prev.n }} · {{ prev.short }}</strong>
+  </a>
+  {% else %}<span></span>{% endif %}
+  {% if next %}
+  <a class="pager-card next reveal" href="{{ next.url | relative_url }}" style="--c: {{ next.color }}">
+    <small>Next →</small><strong>{{ next.n }} · {{ next.short }}</strong>
+  </a>
+  {% else %}
+  <a class="pager-card next reveal" href="{{ '/' | relative_url }}" style="--c: #fbbf24">
+    <small>Back to →</small><strong>Home</strong>
+  </a>
+  {% endif %}
+</nav>

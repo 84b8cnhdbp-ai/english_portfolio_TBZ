@@ -1,0 +1,35 @@
+- n: 1
+  title: About Me / Summer Updates
+  short: About Me
+  url: /#about
+  date: 25 August 2026
+  color: "#fbbf24"
+  icon: sun
+  summary: Who I am, where I work, my hobbies and my summer highlights.
+
+- n: 2
+  title: Brainstorming – Handover Booklet
+  short: Brainstorming
+  url: /entries/02-brainstorming.html
+  date: 25 August 2026
+  color: "#a78bfa"
+  icon: bulb
+  summary: My tasks at Convotis, the dos and don'ts and the vocabulary a new apprentice needs.
+
+- n: 3
+  title: Environmental Predictions
+  short: Environment
+  url: /entries/03-environmental-predictions.html
+  date: 22 October 2026
+  color: "#34d399"
+  icon: leaf
+  summary: The world in 2040 – future perfect, future continuous and AI's thirst for water.
+
+- n: 4
+  title: Conditionals 0 and 1
+  short: Conditionals
+  url: /entries/04-conditionals.html
+  date: 4 November 2026
+  color: "#60a5fa"
+  icon: branch
+  summary: Eight sentences, two conditionals – test yourself in quiz mode.

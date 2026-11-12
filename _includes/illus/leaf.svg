@@ -1,0 +1,24 @@
+<svg class="illus" viewBox="0 0 320 320" role="img" aria-label="Globe with a leaf">
+  <defs>
+    <linearGradient id="globe-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient>
+    <linearGradient id="leaf-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#6ee7b7"/></linearGradient>
+  </defs>
+  <circle cx="160" cy="160" r="150" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)"/>
+  <g class="spin-slow" style="transform-origin:160px 160px">
+    <ellipse cx="160" cy="160" rx="135" ry="50" fill="none" stroke="rgba(52,211,153,.35)" stroke-width="2" stroke-dasharray="4 8" transform="rotate(-20 160 160)"/>
+    <circle cx="35" cy="200" r="7" fill="#34d399"/>
+    <circle cx="290" cy="118" r="5" fill="#fbbf24"/>
+  </g>
+  <circle cx="160" cy="165" r="85" fill="url(#globe-g)"/>
+  <path d="M105 120 q20 -10 35 5 q10 15 -5 25 q-15 5 -10 25 q5 15 -15 15 q-20 -10 -15 -40 q2 -20 10 -30 Z" fill="#34d399" opacity=".9"/>
+  <path d="M185 100 q25 5 35 30 q5 15 -10 15 q-15 -5 -25 5 q-10 10 -20 -5 q-5 -20 5 -35 Z" fill="#34d399" opacity=".85"/>
+  <path d="M175 200 q20 -10 35 5 q5 20 -15 30 q-20 5 -25 -10 q-3 -15 5 -25 Z" fill="#34d399" opacity=".8"/>
+  <circle cx="160" cy="165" r="85" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+  <g class="float" style="--fd: .6s">
+    <path d="M225 95 c0 -45 35 -70 75 -70 c0 45 -30 75 -75 70 Z" fill="url(#leaf-g)"/>
+    <path d="M228 92 q25 -30 62 -58" fill="none" stroke="#064e3b" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g class="drip">
+    <path d="M70 60 c0 0 -14 18 -14 28 a14 14 0 0 0 28 0 c0 -10 -14 -28 -14 -28 Z" fill="#60a5fa"/>
+  </g>
+</svg>

@@ -6,14 +6,14 @@ My English portfolio for TBZ Zürich, published as a website with GitHub Pages.
 
 | # | Entry | File |
 |---|---|---|
-| 1 | About Me / Summer Updates | [`index.md`](index.md) |
-| 2 | Brainstorming – Handover Booklet | [`entries/02-brainstorming.md`](entries/02-brainstorming.md) |
-| 3 | Environmental Predictions | [`entries/03-environmental-predictions.md`](entries/03-environmental-predictions.md) |
-| 4 | Conditionals 0 and 1 | [`entries/04-conditionals.md`](entries/04-conditionals.md) |
+| 1 | About Me / Summer Updates | [`index.html`](index.html) |
+| 2 | Brainstorming – Handover Booklet | [`entries/02-brainstorming.html`](entries/02-brainstorming.html) |
+| 3 | Environmental Predictions | [`entries/03-environmental-predictions.html`](entries/03-environmental-predictions.html) |
+| 4 | Conditionals 0 and 1 | [`entries/04-conditionals.html`](entries/04-conditionals.html) |
 
 ## Still to do
 
-- [ ] Entry 1: add the summer photo as `assets/images/summer-photo.jpg` and change the image path in `index.md`
+- [ ] Entry 1: add the summer photo to `assets/images/` and change the image path in `index.html`
 - [ ] Entry 1: write the summer highlights
 - [ ] Entry 2: add my department
 - [ ] Entry 3: adapt the AI water text to my own opinion
@@ -42,16 +42,27 @@ bundle exec jekyll serve
 
 Open <http://localhost:4000/english_portfolio_TBZ/>.
 
+## How the site works
+
+- `index.html` – home page (hero, About Me, summer, entry cards)
+- `entries/*.html` – one page per entry (layout: `_layouts/entry.html`)
+- `_data/entries.yml` – list of all entries (title, colour, icon, summary). Navigation and cards are built from it.
+- `_includes/illus/*.svg` – animated illustrations, `_includes/icon.html` – small icons
+- `assets/css/style.css` – design, `assets/js/main.js` – animations and interactions
+
 ## Add a new entry
 
-1. Create `entries/05-<topic>.md` with this header:
+1. Create `entries/05-<topic>.html`:
 
-   ```yaml
+   ```html
    ---
    title: Your Title
    entry: 5
-   date_assigned: 18 November 2026
    ---
+   <section>
+     <h2>Heading</h2>
+     <p>Text …</p>
+   </section>
    ```
 
-2. Add a link in `_layouts/default.html` (navigation) and in the table above.
+2. Add the entry to `_data/entries.yml` (n, title, short, url, date, color, icon, summary).

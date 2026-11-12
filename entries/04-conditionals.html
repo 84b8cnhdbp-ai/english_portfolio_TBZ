@@ -1,0 +1,73 @@
+---
+title: Conditionals 0 and 1
+entry: 4
+---
+
+<section>
+  <div class="callout reveal">
+    <strong>Task:</strong> Finish the sentence halves from page 41 in the textbook and say if each one is an example of <strong>conditional 0</strong> (general rule / always true) or <strong>conditional 1</strong> (specific situation / imperative).
+  </div>
+</section>
+
+<!-- ============ Sentences ============ -->
+<section id="quiz">
+  <div class="quiz-head">
+    <div>
+      <p class="eyebrow reveal">Sentences</p>
+      <h2 class="reveal" style="--d: 1; margin: 0">0 or 1?</h2>
+    </div>
+    <div class="reveal" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
+      <div class="hl-toggle" data-quiz-toggle="#quiz">
+        <button aria-pressed="true" data-mode="read">Read</button>
+        <button aria-pressed="false" data-mode="quiz">Quiz mode</button>
+      </div>
+      <span class="score" data-score hidden>Score: <b>0</b> / 8</span>
+    </div>
+  </div>
+
+  {% assign items = "Don't buy a second-hand car unless|a mechanic has checked it first.|1|Imperative – a specific situation.;You shouldn't think of getting a tattoo if|you aren't sure that you'll still like it in twenty years.|0|General advice that is always true.;Keep a first-aid kit in your house in case|someone gets hurt.|1|Imperative.;Children shouldn't use social media until|they are old enough to understand the risks.|0|A general rule.;Always take out travel insurance in case|you get sick or your flight is cancelled.|1|Imperative.;As soon as you've received your new credit card,|sign it and activate it in your banking app.|1|Imperative – a specific situation.;Don't go walking in the mountains on your own unless|you tell someone where you're going.|1|Imperative.;If you are taking a new job abroad,|you will need to find out if you need a work permit.|1|Specific situation with will in the main clause." | split: ";" %}
+  <div class="qcards">
+    {% for it in items %}{% assign p = it | split: "|" %}
+    <div class="card qcard reveal" data-answer="{{ p[2] }}" style="--d: {{ forloop.index0 | modulo: 4 }}">
+      <span class="n">{{ forloop.index }}</span>
+      <p class="sentence">{{ p[0] }} <span class="rest">{{ p[1] }}</span><span class="why">{{ p[3] }}</span></p>
+      <span class="answer-type t{{ p[2] }}">Conditional {{ p[2] }}</span>
+      <div class="guess"><button data-guess="0" aria-label="Conditional 0">0</button><button data-guess="1" aria-label="Conditional 1">1</button></div>
+    </div>
+    {% endfor %}
+  </div>
+  <p class="reveal" style="margin-top: 20px"><button class="btn" data-quiz-reset hidden>Try again</button></p>
+</section>
+
+<!-- ============ Rules ============ -->
+<section>
+  <div class="section-head">
+    <p class="eyebrow reveal">Grammar notes</p>
+    <h2 class="reveal" style="--d: 1">The rules behind it</h2>
+  </div>
+  <div class="grid grid-2 rule-cards">
+    <div class="card reveal" style="--c: var(--amber)">
+      <h3><span class="answer-type t0" style="font-size: 13px">0</span> Zero conditional</h3>
+      <span class="formula">If / when + present, present</span>
+      <p>General rules and facts that are always true.</p>
+      <p><em>If you heat ice, it melts.</em></p>
+    </div>
+    <div class="card reveal" style="--d: 1; --c: var(--green)">
+      <h3><span class="answer-type t1" style="font-size: 13px">1</span> First conditional</h3>
+      <span class="formula">If + present, will / imperative / modal</span>
+      <p>A specific, possible situation in the future, or an instruction.</p>
+      <p><em>If it rains tomorrow, I'll take the train.</em><br><em>If you see Tom, tell him to call me.</em></p>
+    </div>
+    <div class="card reveal" style="--c: var(--violet)">
+      <h3>unless</h3>
+      <span class="formula">unless = if … not</span>
+      <p><em>Don't go unless you tell someone.</em> = Don't go if you don't tell someone.</p>
+    </div>
+    <div class="card reveal" style="--d: 1; --c: var(--blue)">
+      <h3>in case · until · as soon as</h3>
+      <span class="formula">+ present (not will)</span>
+      <p><strong>in case</strong> = as a precaution: <em>Take an umbrella in case it rains.</em></p>
+      <p><em>As soon as you've received your card, …</em> – not <s>as soon as you will receive</s></p>
+    </div>
+  </div>
+</section>

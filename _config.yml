@@ -1,5 +1,5 @@
 title: Livio's English Portfolio
-description: English portfolio – TBZ Zürich, apprentice platform developer (Informatik EFZ)
+description: English portfolio – TBZ Zürich, apprentice platform developer (Informatik EFZ) at Convotis
 author: Livio
 lang: en
 baseurl: "/english_portfolio_TBZ"
@@ -15,3 +15,7 @@ defaults:
       path: ""
     values:
       layout: default
+  - scope:
+      path: "entries"
+    values:
+      layout: entry

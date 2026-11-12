@@ -1,0 +1,24 @@
+<svg class="illus" viewBox="0 0 320 320" role="img" aria-label="Sun over mountains">
+  <defs>
+    <linearGradient id="sun-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <linearGradient id="mtn-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <linearGradient id="mtn-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#312e81"/></linearGradient>
+  </defs>
+  <circle cx="160" cy="160" r="150" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.08)"/>
+  <g class="spin-slow" style="transform-origin:200px 120px">
+    <g stroke="#fbbf24" stroke-width="6" stroke-linecap="round" opacity=".7">
+      <line x1="200" y1="44" x2="200" y2="60"/><line x1="200" y1="180" x2="200" y2="196"/>
+      <line x1="124" y1="120" x2="140" y2="120"/><line x1="260" y1="120" x2="276" y2="120"/>
+      <line x1="146" y1="66" x2="157" y2="77"/><line x1="243" y1="163" x2="254" y2="174"/>
+      <line x1="146" y1="174" x2="157" y2="163"/><line x1="243" y1="77" x2="254" y2="66"/>
+    </g>
+  </g>
+  <circle class="pulse" cx="200" cy="120" r="44" fill="url(#sun-g)"/>
+  <path d="M10 250 L110 140 L170 205 L220 160 L310 250 Z" fill="url(#mtn-g2)" opacity=".9"/>
+  <path d="M95 158 L110 140 L126 158 L116 154 L110 162 L103 154 Z" fill="#fff" opacity=".85"/>
+  <path d="M10 270 L80 200 L150 255 L240 175 L310 260 L310 300 L10 300 Z" fill="url(#mtn-g)"/>
+  <path d="M226 188 L240 175 L254 189 L245 186 L240 192 L234 186 Z" fill="#fff" opacity=".8"/>
+  <path class="wave" d="M30 285 q20 -10 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  <g class="float" style="--fd: 1.2s"><circle cx="70" cy="80" r="5" fill="#f472b6"/></g>
+  <g class="float" style="--fd: .4s"><circle cx="280" cy="210" r="4" fill="#34d399"/></g>
+</svg>

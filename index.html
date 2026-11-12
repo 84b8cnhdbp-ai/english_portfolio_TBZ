@@ -1,0 +1,153 @@
+---
+layout: default
+entry: 1
+description: Livio – apprentice platform developer at Convotis. My English portfolio for TBZ Zürich.
+---
+
+<!-- ================= HERO ================= -->
+<section class="hero" data-spotlight>
+  <div>
+    <p class="eyebrow reveal" style="--c: var(--amber)">English Portfolio · TBZ Zürich</p>
+    <h1 class="reveal" style="--d: 1">Hi, I'm <span class="gradient-text">Livio</span>.</h1>
+    <p class="lead reveal" style="--d: 2">
+      I'm an
+      <span class="rotator" data-rotator>
+        <span class="on">apprentice platform developer</span>
+        <span>ice hockey referee supervisor</span>
+        <span>fantasy football commissioner</span>
+        <span>web app builder</span>
+      </span>
+      <br>from the canton of Zug, Switzerland.
+    </p>
+    <div class="hero-actions reveal" style="--d: 3">
+      <a class="btn primary" href="#entries">Explore my entries</a>
+      <a class="btn" href="#about">About me</a>
+    </div>
+    <div class="stats reveal" style="--d: 4">
+      <div><strong data-count="4">0</strong><span>portfolio entries</span></div>
+      <div><strong data-count="2" data-suffix="nd">0</strong><span>year apprentice</span></div>
+      <div><strong data-count="3">0</strong><span>hobbies I love</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal" style="--d: 2">
+    <div class="terminal">
+      <div class="terminal-bar"><i></i><i></i><i></i><small>livio@convotis: ~</small></div>
+      <pre data-typer><span class="p">$</span> whoami
+livio — apprentice platform developer
+
+<span class="p">$</span> cat job.yml
+<span class="k">company:</span> <span class="s">Convotis Schweiz AG</span>
+<span class="k">location:</span> <span class="s">Rotkreuz</span>
+<span class="k">school:</span> <span class="s">TBZ Zürich</span>
+
+<span class="p">$</span> ls hobbies/
+ice-hockey/  fantasy-football/  web-apps/
+
+<span class="p">$</span> echo "Welcome to my portfolio!"
+Welcome to my portfolio!</pre>
+    </div>
+    <div class="orbit o1">{% include icon.html name="laptop" %}</div>
+    <div class="orbit o2">{% include icon.html name="puck" %}</div>
+    <div class="orbit o3">{% include icon.html name="football" %}</div>
+  </div>
+  <a class="scroll-hint" href="#about" aria-label="Scroll down"></a>
+</section>
+
+<!-- ================= ABOUT ME ================= -->
+<section class="section" id="about" style="--c: var(--amber)">
+  <div class="section-head">
+    <p class="eyebrow reveal">Entry 1 · About Me</p>
+    <h2 class="reveal" style="--d: 1">A few facts about me</h2>
+    <p class="lead reveal" style="--d: 2">I'm doing my apprenticeship as a platform developer (Informatik EFZ). At work I set up notebooks for our customers, and I'm often the person who takes care of the IT for these devices. I also help with internal projects, for example moving our old OTRS templates into our new Jira system.</p>
+  </div>
+
+  <div class="grid grid-4">
+    <div class="card fact reveal" data-tilt style="--c: var(--amber)">
+      <div class="icon">{% include icon.html name="building" %}</div>
+      <div><small>Company</small><strong>Convotis Schweiz AG</strong><br><span class="muted">Rotkreuz</span></div>
+    </div>
+    <div class="card fact reveal" data-tilt style="--d: 1; --c: var(--violet)">
+      <div class="icon">{% include icon.html name="briefcase" %}</div>
+      <div><small>Job title</small><strong>Apprentice Platform Developer</strong><br><span class="muted">Informatik EFZ</span></div>
+    </div>
+    <div class="card fact reveal" data-tilt style="--d: 2; --c: var(--blue)">
+      <div class="icon">{% include icon.html name="school" %}</div>
+      <div><small>School</small><strong>TBZ Zürich</strong><br><span class="muted">Technische Berufsschule</span></div>
+    </div>
+    <div class="card fact reveal" data-tilt style="--d: 3; --c: var(--green)">
+      <div class="icon">{% include icon.html name="chat" %}</div>
+      <div><small>Languages</small><strong>German &amp; English</strong><br><span class="muted">Canton of Zug</span></div>
+    </div>
+  </div>
+
+  <h3 class="reveal" style="margin-top: 56px; font-size: 1.5rem">My hobbies</h3>
+  <div class="grid grid-3" style="margin-top: 20px">
+    <div class="card hobby reveal" data-tilt style="--c: var(--blue)">
+      <div class="icon">{% include icon.html name="puck" %}</div>
+      <h3>Ice hockey</h3>
+      <p>I'm involved in refereeing for the Swiss Ice Hockey Federation (SIHF). I help with the supervision of referees and assign referees to youth games.</p>
+      <span class="tag">U9 – U16</span>
+    </div>
+    <div class="card hobby reveal" data-tilt style="--d: 1; --c: var(--pink)">
+      <div class="icon">{% include icon.html name="football" %}</div>
+      <h3>Fantasy football</h3>
+      <p>I'm the commissioner of an NFL fantasy football league on Sleeper. My own team is called <em>"Safety first"</em>.</p>
+      <span class="tag">Commissioner</span>
+    </div>
+    <div class="card hobby reveal" data-tilt style="--d: 2; --c: var(--green)">
+      <div class="icon">{% include icon.html name="code" %}</div>
+      <h3>Coding projects</h3>
+      <p>I built my own offline web app for referee supervision. It runs on GitHub Pages and exports reports as JSON and PDF.</p>
+      <span class="tag">GitHub Pages</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUMMER ================= -->
+<section class="section" id="summer" style="--c: var(--pink)">
+  <div class="summer">
+    <figure class="photo-frame reveal" data-parallax>
+      <!-- TODO: put your photo into assets/images/ and change the file name here -->
+      <img src="{{ '/assets/images/summer-photo.svg' | relative_url }}" alt="My summer photo">
+      <figcaption><span class="todo">TODO: caption – where and when was this photo taken?</span></figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow reveal">Entry 1 · Summer Updates</p>
+      <h2 class="reveal" style="--d: 1">My summer highlights</h2>
+      <p class="reveal" style="--d: 2"><span class="todo">TODO: Write 1–2 paragraphs about your summer. Where was the photo taken? Who is in it? What happened, and why was it a highlight?</span></p>
+      <div class="phrases reveal" style="--d: 3">
+        <span>This photo was taken in …</span>
+        <span>One of my highlights was …</span>
+        <span>I really enjoyed …</span>
+        <span>The best part was when …</span>
+        <span>Looking back, …</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENTRIES ================= -->
+<section class="section" id="entries" style="--c: var(--violet)">
+  <div class="section-head">
+    <p class="eyebrow reveal">Portfolio</p>
+    <h2 class="reveal" style="--d: 1">All entries</h2>
+    <p class="lead reveal" style="--d: 2">Click on a card – each entry is interactive.</p>
+  </div>
+  <div class="grid grid-4">
+    {% for e in site.data.entries %}
+    <a class="card entry-card reveal" data-tilt href="{{ e.url | relative_url }}" style="--c: {{ e.color }}; --d: {{ forloop.index0 }}">
+      <div class="art" style="view-transition-name: art-{{ e.n }}">
+        <span class="num" style="view-transition-name: num-{{ e.n }}">0{{ e.n }}</span>
+        {% include illus/{{ e.icon }}.svg %}
+      </div>
+      <div class="body">
+        <small class="muted">{{ e.date }}</small>
+        <h3>{{ e.title }}</h3>
+        <p>{{ e.summary }}</p>
+        <span class="go">Open entry</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
